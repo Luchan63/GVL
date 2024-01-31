@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65fc2267b6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+            <nav>
+
+                <div class="logo">
+                    <a href="#"><img src="imagenes/LogoGVL (1).png" alt=""></a>
+                    <figcaption>GVL TECH LABS</figcaption>
+                </div>
+
+                <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li> <a href="#">Servicios</a> </li>
+                    <li>     <a href="#">Productos</a></li>
+                    <li> <a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <form action="https://formsubmit.co/gvttechlabs@gmail.com" method="POST">
+            <h2>INFORMACION PERSONAL</h2>
+            <div class="input-group">
+                <!-- campo nombre -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre"> 
+        
+                <!-- fecha nacimiento -->
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+                <!-- genero -->
+                <label for="genero">Género:</label>
+                <select name="genero" id="genero">
+                    <option value=""></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            
+                <!-- direccion -->
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion" required minlength="2" maxlength="100" size="50">
+
+                <!-- codigo_postal -->
+                <label for="codigo_postal">Codigo Postal</label>
+                <input type="text" name="codigo_postal" id="codigo_postal" placeholder="28000" required minlength="2" maxlength="5"><br><br>
+
+                <!-- numero de telefono -->
+                <label for="numero_telefono">Telefono movil</label>
+                <input type="tel" id="numero_telefono" name="numero_telefono" placeholder="123456789">
+
+                <!-- correo -->
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="corro" required placeholder="nombre@ejemplo.com">
+                    
+                   
+                <input type="submit" value="enviar" class="btn">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            </div>              
+        </form>
+    </main>
+
+   <!-- Footer -->
+   <footer>
+    <div class="my-footer">
+      <div class="wrapper">
+      <ul>
+      <li class="facebook"><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+      <li class="instagram"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+      <li class="linkedin"><a href="https://twitter.com/home?lang=es" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+      <p>&copy; 2024 AGVL Tech Labs. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

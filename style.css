@@ -1,0 +1,348 @@
+body{
+    background-color: #e5e0daff;
+    font-family: Arial, Helvetica, sans-serif; /*define una lista de fuentes o familias de fuentes*/
+}
+main{
+    min-height: 100vh; /*se utiliza para definir la altura mínima de un elemento dado*/
+    display: flex; /*hacemos el elmento flexivle*/
+    flex-wrap: wrap;
+    align-items: center; /* centramos todos los contenedores en el centro*/
+    justify-content: center; /*define cómo el navegador distribuye el espacio entre y alrededor de los items flex*/
+    
+}
+/* =================================================================
+                        form
+====================================================================*/
+form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 50px 55px; /*aqui aplicamos el mismo releno arriba y abajo y iquierda y derecha*/
+    box-shadow: 0 0 20px rgb(0,0 ,0,0.2); /*aqui añadimos una sombra alrededor del contenedor o formulario*/
+    border-radius: 20px; /* creamos un borde alrededor de las esquinas de un contenedor*/
+    text-align: center; /* alinemos todo dentro del formulario al centro*/
+    width: 50%;/*aplicamos el ancho del formulario*/
+}
+/* =================================================================
+                        input-Group
+====================================================================*/
+.input-group{
+    display: flex; /* ponemos la caja flexible*/
+    flex-direction: column; /* ponemos en columnas todo lo que esta dentro de la caja*/
+    text-align: left; /* alineamos todo el texto dentro de la caja a la izquierda*/
+}
+
+.contenedor-mensaje{
+    width: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =================================================================
+                        h1, h2, h3,h4, h5, h6
+====================================================================*/
+h2{
+    color: #283629; /* aggregamos color a los titulos*/
+    font-size: 29px; /* le agregamos un tamoño a los titulos*/
+}
+/* =================================================================
+                                Label
+====================================================================*/
+
+label{
+    color: #283629; /* aggregamos color a las letras dentro del formulario*/
+    font-size: 15px; /* ponemos el tamaño de las letras*/
+    font-weight: 600px; /*le ponemos un tamaño a las letras*/
+    margin-bottom: 15px;/* aplicamos un margen a la parte inferior de cada label*/ 
+}
+/*==================================================================
+                            input and placeholder
+====================================================================*/
+input, select{
+    padding: 17px 25px; /* relleno del los input*/
+    border-radius: 25px; /* redondeo las esquinas exterior*/
+    margin-bottom: 20px; /* aplicamos margen a la parte inferior*/
+    margin-top: 5px; /* aplicamos margen a la parte de arriba*/
+    background-color: #fff; /* ponemos un color al relleno*/
+    border: 0.2px solid #798079; /* le aplicamos color a las lineas del border*/
+    color: #1e1f1e; /* aplicamos color a las letras dentro del input*/
+    outline: none; /* le quitamos las propiedades al contorno*/
+
+}
+
+input::placeholder{
+    color: #0f0f0f; /* le aplicamos un color al texto predeterminado dentro del border*/
+}
+/*================================================================
+                            btn
+==================================================================*/
+
+.btn,#btn{
+    font-size: 16px;
+    color: black;
+    border: 0;
+    border-radius: 25px;
+    background-color: #ffff;
+    box-shadow: 0 0 20px rgba(155, 167, 154, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover, #btn:hover{
+    background-color: #848983;
+}
+
+/*=================================================================
+                            header
+===================================================================*/
+
+header {
+    background-color: #fcf9f2ff;
+    padding: 15px;
+
+  }
+   nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 4px 6px;
+        background-color: #E0CCBE;
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    
+    .logo img {  
+        width: 100px; 
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    li {
+        padding: 0rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #0f0f0f;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #614d4d;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /*=================================================================
+                           footer
+===================================================================*/
+
+footer {
+    background-color: #fcf9f2ff;
+    padding: 15px;
+    
+  }
+
+  .my-footer{
+    background-color: #E0CCBE;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+   
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+   
+  }
+  .wrapper ul li{
+    width: 25px;
+    height: 25px;
+    line-height: 15px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 5px solid #E0CCBE;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li .fab{
+       color: #fff;
+        transition: all0.5s ease;
+  } 
+.wrapper ul li:hover.facebook{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15 #3b5998;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow: 0 0 15 #3b5998;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.instagram{
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15 #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 15 #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.linkedin{
+    border: 5px solid #0077b5;
+    box-shadow: 0 0 15 #0077b5;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin{
+    color: #0077b5;
+    text-shadow: 0 0 15 #0077b5;
+    transition: all 0.5s ease;
+}
+
+/*=================================================================
+                            media
+===================================================================*/
+@media(max-width: 991px){
+    /* aplicamos el padi que alquieres mediante se hace responsive*/
+        body{
+            padding: 30px;
+        }
+
+        form{
+            padding: 50px 30px;
+        }
+
+        input {
+            padding: 15px
+        };
+}
+
+@media(max-width:590px)
+{
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*====================================================================
+                        section
+======================================================================*/                        
+.carrucer{
+    display: flex;
+    width: 100%;
+    height: 530px;
+}
+.carrucer img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.carrucer img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.contenedor-contacto{
+display:flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+
+
+}
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.datos_1{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.contenedor-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box{
+    width: 30%;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
